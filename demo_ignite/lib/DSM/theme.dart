@@ -19,6 +19,7 @@ class DemoColors {
   final greyBackground = const Color(0xffF9F9F9);
   final orange = const Color(0xffFF930F);
   final linkBlue = const Color(0xff1971C2);
+  final green = const Color(0xFF0D9B6A);
 
   const DemoColors();
 }

@@ -113,6 +113,7 @@ class _ApplicationPersonalDetailsState
                 children: [
                   SS24(),
                   MyCustomTextField(
+                    obsecureText: false,
                     controller: _incomeController,
                     labelText: 'Name',
                     onChanged: (value4) {},
@@ -130,6 +131,7 @@ class _ApplicationPersonalDetailsState
                 children: [
                   SS24(),
                   MyCustomTextField(
+                    obsecureText: false,
                     controller: _maidenNameController,
                     labelText: 'Lastname at birth',
                     onChanged: (value4) {
@@ -151,6 +153,7 @@ class _ApplicationPersonalDetailsState
                 children: [
                   SS24(),
                   MyCustomTextField(
+                    obsecureText: false,
                     controller: _lastNameController,
                     labelText: 'Lastname',
                     onChanged: (value4) {
@@ -172,6 +175,7 @@ class _ApplicationPersonalDetailsState
                 children: [
                   SS24(),
                   MyCustomTextField(
+                    obsecureText: false,
                     controller: _nicController,
                     labelText: 'NIC number',
                     onChanged: (value5) {},
@@ -193,7 +197,7 @@ class _ApplicationPersonalDetailsState
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Body_regular_12('Maritial status', Colors.black),
+                      Body_regular_12('Marital status', Colors.black),
                     ],
                   ),
                   SS8(),

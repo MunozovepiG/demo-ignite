@@ -72,13 +72,7 @@ class _DefaultPageState extends State<DefaultPage> {
                   maidenName: maidenName,
                   newJob: newJob)
               : _selectedIndex == 1
-                  ? MyHub(
-                      marriage: marriage,
-                      application: application,
-                      name: name,
-                      lastName: lastName,
-                      maidenName: maidenName,
-                      newJob: newJob)
+                  ? Blank()
                   : Blank(),
         ),
         bottomNavigationBar: Container(
@@ -154,9 +148,9 @@ class _DefaultPageState extends State<DefaultPage> {
                                   image: DecorationImage(
                                     image: _selectedIndex == 1
                                         ? AssetImage(
-                                            'assets/homePage/hubActive.png')
+                                            'assets/homePage/accounts.png')
                                         : AssetImage(
-                                            'assets/homePage/hubInActiveButton.png'),
+                                            'assets/homePage/accounts.png'),
                                   ),
                                   shape: BoxShape.circle,
                                   // Replace with your selected image path
@@ -164,7 +158,7 @@ class _DefaultPageState extends State<DefaultPage> {
                               ),
                               SS4(),
                               Body_regular_8(
-                                  "Mo'Kwin",
+                                  "Accounts",
                                   _selectedIndex == 1
                                       ? AppTheme.colors.primaryRed
                                       : Colors.black)

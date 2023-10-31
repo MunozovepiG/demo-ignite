@@ -197,3 +197,32 @@ class ChipButton extends StatelessWidget {
     );
   }
 }
+
+//the small round button
+
+class SmallRoundButton extends StatelessWidget {
+  String text;
+  Color color;
+  VoidCallback onPressed;
+
+  SmallRoundButton(
+      {required this.text, required this.color, required this.onPressed});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      child: Container(
+        width: 80,
+        height: 22,
+        decoration: ShapeDecoration(
+          shape: RoundedRectangleBorder(
+            side: BorderSide(width: 1, color: Color(0xFFC43543)),
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+        child: Center(child: Body_regular_12(text, color)),
+      ),
+      onTap: onPressed,
+    );
+  }
+}

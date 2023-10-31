@@ -133,6 +133,7 @@ class _FamilyDetailsState extends State<FamilyDetails> {
                 children: [
                   SS24(),
                   MyCustomTextField(
+                    obsecureText: false,
                     controller: _incomeController,
                     labelText: 'Number of dependents',
                     onChanged: (value4) {},

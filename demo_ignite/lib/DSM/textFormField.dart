@@ -9,13 +9,13 @@ class MyCustomTextField extends StatelessWidget {
   final String? labelText;
 
   final void Function(String)? onChanged;
-
-  MyCustomTextField({
-    Key? key,
-    required this.controller,
-    this.labelText,
-    this.onChanged,
-  });
+  bool obsecureText;
+  MyCustomTextField(
+      {Key? key,
+      required this.controller,
+      this.labelText,
+      this.onChanged,
+      required this.obsecureText});
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +31,7 @@ class MyCustomTextField extends StatelessWidget {
             height: 56,
             color: Colors.white,
             child: TextFormField(
+              obscureText: obsecureText,
               controller: controller,
               decoration: InputDecoration(
                   labelText: labelText,

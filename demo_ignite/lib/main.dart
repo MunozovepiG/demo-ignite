@@ -1,5 +1,6 @@
 import 'package:demo_ignite/screens/homePage.dart';
 import 'package:demo_ignite/screens/pageView.dart';
+import 'package:demo_ignite/screens/preLogin.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: DefaultPage(
+        home: PreLogin(
           application: false,
           name: 'Munozovepi',
           lastName: 'Gwata',

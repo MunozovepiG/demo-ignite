@@ -84,8 +84,12 @@ flutter:
     - assets/homePage/homeInactive.png
     - assets/homePage/hubActive.png
     - assets/homePage/homeIcon.png
-
-
+    - assets/homePage/homeLoan.png
+    - assets/homePage/biometric.png
+    - assets/homePage/accounts.png
+    - assets/homePage/Celebrate.png
+    - assets/homePage/okay.png
+    - assets/homePage/note.png
 #profile images
     - assets/profileImages/chart.png
     - assets/profileImages/contac.png
@@ -109,6 +113,11 @@ flutter:
 #loan images 
     - assets/loans/congrat.png
     - assets/loans/ads.png
+
+
+#alerts 
+    - assets/alerts/branchClosed.png
+    - assets/alerts/fakeNews.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

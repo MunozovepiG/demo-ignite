@@ -288,6 +288,7 @@ class _WorkDetailsState extends State<WorkDetails> {
             children: [
               SS24(),
               MyCustomTextField(
+                obsecureText: false,
                 controller: _incomeController,
                 labelText: 'Monthly salary',
                 onChanged: (value4) {},

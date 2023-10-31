@@ -56,6 +56,30 @@ class Header extends StatelessWidget {
   }
 }
 
+//plain header
+class PlainHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: AppTheme.colors.white,
+      width: MediaQuery.of(context).size.width * 1.0,
+      height: 120,
+      child: Padding(
+        padding: const EdgeInsets.only(left: 24.0, right: 24),
+        child: Center(
+            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Container(
+            child: Image(
+              image: AssetImage('assets/homePage/Logo.png'),
+              fit: BoxFit.fill,
+            ),
+          ),
+        ])),
+      ),
+    );
+  }
+}
+
 //mobile header
 
 class MobileHeader extends StatelessWidget {
